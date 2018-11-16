@@ -17,6 +17,10 @@ defmodule App do
     IO.puts :world
   end
 
+  def irc_supervisor do
+
+  end
+
   def start(_type, _args) do
     IO.puts "starting"
     Task.start(fn -> :timer.sleep(1000); IO.puts("done sleeping") end)
