@@ -15,7 +15,7 @@ defmodule TcpServer do
 
   def handle_info({:tcp,socket,packet},state) do
     IO.inspect packet, label: "incoming packet"
-    :gen_tcp.send socket,"Hi Blackode \n"
+    :gen_tcp.send socket, "Received"
     {:noreply,state}
   end
 
